@@ -18,7 +18,10 @@ class LaravelAdminLoadingOverlayServiceProvider extends ServiceProvider
 
         Admin::script('
             $(document).ajaxStart(function(){
-                $.LoadingOverlay("show");
+                $.LoadingOverlay("show",{
+                    background: "rgb(0,0,0, 0.2)",
+                    imageColor: "#f6bd00"
+                });
             });
             $(document).ajaxStop(function(){
                 $.LoadingOverlay("hide");
