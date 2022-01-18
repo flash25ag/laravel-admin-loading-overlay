@@ -6,13 +6,13 @@ Laravel Admin Loading Overlay Extension
 2. add code below to composer.json file.
 "require": {
     "wuwx/laravel-admin-loading-overlay": "dev-master"
-},
+ },
 "repositories":[
         {
             "type": "vcs",
             "url": "your-repo-path/laravel-admin-loading-overlay.git"
         }
  ],
-
-3.php artisan vendor:publish --tag=laravel-admin-loading-overlay
+3. run composer update
+4. run php artisan vendor:publish --tag=laravel-admin-loading-overlay
 ```
